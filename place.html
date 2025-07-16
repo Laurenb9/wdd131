@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colombia</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Colombia</h1>
+  </header>
+
+ <main>
+  <section class="hero">
+    <picture>
+      <source src="scripts/images/colombia_town.jpg" media="(min-width: 768px)" />
+      <img src="scripts/images/colombia_town.jpg" alt="Landscape of Colombia" />
+    </picture>
+
+    <section class="data">
+      <h2>Data</h2>
+      <p><strong>Area:</strong> 1,141,748 sq km</p>
+      <p><strong>Population:</strong> 52,215,503</p>
+      <p><strong>Capital:</strong> Bogotá</p>
+      <p><strong>Languages:</strong> Spanish</p>
+      <p><strong>Currency:</strong> Colombian Peso (COP)</p>
+      <p><strong>Time Zone:</strong> UTC-5</p>
+      <p><strong>Calling Code:</strong> +57</p>
+      <p><strong>Internet TLD:</strong> .co</p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="icon-wide"></span></h2>
+      <img src="scripts/images/weather-icon.png" alt="Weather icon" class="icon-mobile" />
+      <p><strong>Temperature:</strong> 14 °C</p>
+      <p><strong>Conditions:</strong> Cloudy</p>
+      <p><strong>Wind:</strong> 6 km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+    </section>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; <span id="year"></span> 💛 Laura Rendón 💛 Colombia</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
