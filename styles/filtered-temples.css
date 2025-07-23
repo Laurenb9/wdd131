@@ -1,0 +1,119 @@
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #40006b;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#menuBtn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.temple-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #330033;
+}
+
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #40006b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Estilo para cada tarjeta de templo */
+.temple-card {
+  background-color: #757575;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen abajo, texto arriba */
+.temple-card img {
+  order: 2;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Título e info del templo */
+.temple-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.temple-card p {
+  margin: 0.2rem 0;
+}

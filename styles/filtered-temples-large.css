@@ -1,0 +1,46 @@
+/* En pantallas grandes, mostrar nav horizontal */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+  }
+
+  nav a {
+    padding: 0.25rem 0;
+  }
+}
+
+nav {
+  display: flex !important;
+  gap: 1rem;
+}
+
+#menuBtn {
+  display: none;
+}
+
+.temple-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.temple-card {
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;}
