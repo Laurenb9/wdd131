@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Laura Rendón" />
+  <meta name="description" content="Learn about the history of women in boxing, from early pioneers to global champions." />
+  <title>History - Box Like a Woman</title>
+  <link rel="stylesheet" href="styles/inspiration.css" />
+  <link rel="stylesheet" href="styles/siteplan-large.css" />
+  <link rel="stylesheet" href="styles/siteplan.css" />
+  <link rel="stylesheet" href="styles/inspiration-large.css" media="screen and (min-width: 768px)" />
+  <link rel="stylesheet" href="styles/history.css">
+</head>
+
+<body>
+  <header>
+    <h1>Box Like a Woman</h1>
+    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="siteplan.html">Home</a></li>
+        <li><a href="techniques.html">Techniques</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="history.html" class="active">History</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h2>The History of Women in Boxing</h2>
+      <p>Breaking barriers, round by round.</p>
+    </section>
+
+    <section class="history-timeline">
+      <article>
+        <h3>18th & 19th Century</h3>
+        <p>Although rare and often discouraged, some women in Europe and the U.S. participated in bare-knuckle boxing exhibitions. They were considered novelties and not taken seriously in the sport.</p>
+      </article>
+
+      <article>
+        <h3>1950s – Barbara Buttrick</h3>
+        <p>Barbara Buttrick became one of the first women to gain recognition as a legitimate boxer. She fought exhibition and professional bouts, helping to bring visibility to female fighters.</p>
+      </article>
+
+      <article>
+        <h3>1970s–1990s – Legalization and Recognition</h3>
+        <p>Women began challenging the legal system to gain the right to box professionally. In 1993, USA Boxing officially sanctioned women's amateur boxing. Christy Martin became a mainstream figure with televised fights.</p>
+      </article>
+
+      <article>
+        <h3>2000s – Olympic Breakthrough</h3>
+        <p>In 2012, women's boxing debuted at the Olympic Games in London. Katie Taylor, Nicola Adams, and Claressa Shields became icons and changed the public’s perception of female boxers.</p>
+      </article>
+
+      <article>
+        <h3>Today</h3>
+        <p>Female fighters like Amanda Serrano, Seniesa Estrada, and Savannah Marshall continue to sell out arenas and headline major events. Women’s boxing is now recognized globally with multiple champions across weight classes.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Box Like a Woman</p>
+    <p><a href="references.html" style="color: var(--mustard);">References</a></p>
+  </footer>
+
+  <script src="scripts/siteplan.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

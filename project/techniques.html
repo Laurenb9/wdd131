@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Laura Rendón" />
+  <meta name="description" content="Explore essential boxing techniques and learn how to choose the right gear for your training." />
+  <title>Boxing Techniques - Box Like a Woman</title>
+  <link rel="stylesheet" href="styles/techniques.css" />
+  <link rel="stylesheet" href="styles/techniques-large.css" media="screen and (min-width: 768px)" />
+</head>
+
+<body>
+  <header>
+    <h1>Box Like a Woman</h1>
+    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="siteplan.html">Home</a></li>
+        <li><a href="techniques.html" class="active">Techniques</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="history.html">History</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h2>Boxing Techniques</h2>
+      <p>Master your stance, sharpen your jab, and learn to move like a fighter.</p>
+    </section>
+
+    <section class="techniques">
+      <h3>Core Techniques</h3>
+      <div class="technique-grid">
+        <article>
+          <h4>Boxing Stance</h4>
+          <p>Maintain balance, protect your face, and prepare for offense and defense.</p>
+        </article>
+        <article>
+          <h4>Jab</h4>
+          <p>Your most important punch. Fast, controlled, and always ready to lead.</p>
+        </article>
+        <article>
+          <h4>Cross</h4>
+          <p>The power punch thrown from your rear hand, used to break defenses.</p>
+        </article>
+        <article>
+          <h4>Hook</h4>
+          <p>Thrown in a circular motion to catch your opponent from the side.</p>
+        </article>
+        <article>
+          <h4>Footwork</h4>
+          <p>Move with intention. Control the ring with smooth, agile steps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gear">
+      <h3>Choosing Your Gear</h3>
+      <div class="gear-gallery">
+        <figure>
+          <img src="images/gloves.jpg" alt="Boxing gloves" />
+          <figcaption>Gloves: Pick the right weight for your style.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/wraps.jpg" alt="Hand wraps" />
+          <figcaption>Wraps: Essential to protect your wrists and knuckles.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/shoes.jpg" alt="Boxing shoes" />
+          <figcaption>Shoes: Lightweight and built for agility.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/headgear.jpg" alt="Headgear" />
+          <figcaption>Headgear: For safe sparring during training.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Box Like a Woman</p>
+    <p><a href="references.html" style="color: var(--mustard);">References</a></p>
+  </footer>
+
+  <script src="scripts/siteplan.js"></script>
+  <script>
+    // Dynamic year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

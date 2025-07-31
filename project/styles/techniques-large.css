@@ -1,0 +1,66 @@
+#menu-toggle {
+  display: none;
+}
+
+nav ul {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 0;
+}
+
+nav {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.technique-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.gear-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+
+/* History Page – Desktop */
+
+.history-timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.history-timeline article {
+  transition: transform 0.3s ease;
+}
+
+.history-timeline article:hover {
+  transform: translateY(-5px);
+  background-color: var(--mustard);
+  color: var(--black-green);
+}

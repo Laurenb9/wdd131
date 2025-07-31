@@ -1,0 +1,17 @@
+#nav-menu {
+  display: none;
+}
+
+#nav-menu.show {
+  display: block;
+}
+
+/* Esto es solo para móviles, puedes ajustar luego con media queries */
+#menu-toggle {
+  display: block;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  border: none;
+}
+

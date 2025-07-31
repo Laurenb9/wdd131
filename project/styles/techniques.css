@@ -1,0 +1,126 @@
+:root {
+  --white: #ffffff;
+  --blue-gray: #586F7C;
+  --black-green: #040F0F;
+  --mustard: #FFB800;
+  --dark-red: #78290F;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--white);
+  color: var(--black-green);
+}
+
+header {
+  background-color: var(--dark-red);
+  color: var(--white);
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  color: var(--mustard);
+}
+
+nav.open ul {
+  display: flex;
+}
+
+body {
+    background-color: black;
+}
+
+
+.page-hero {
+  background-color: var(--blue-gray);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.technique-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.technique-grid article {
+  background-color: var(--mustard);
+  color: var(--black-green);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.gear {
+  margin-top: 2rem;
+  color: #ffffff;
+}
+
+.gear-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gear-gallery img {
+  width: 120px;
+ 
+
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gear-gallery figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  background-color: var(--blue-gray);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

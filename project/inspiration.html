@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Laura Rendón" />
+  <meta name="description" content="Discover inspiring women boxers across history. Their strength, legacy, and breakthroughs in boxing." />
+  <title>Inspiration - Box Like a Woman</title>
+  <link rel="stylesheet" href="styles/inspiration.css" />
+  <link rel="stylesheet" href="styles/siteplan-large.css" />
+  <link rel="stylesheet" href="styles/siteplan.css" />
+  <link rel="stylesheet" href="styles/inspiration-large.css" media="screen and (min-width: 768px)" />
+
+</head>
+
+<body>
+  <header>
+    <h1>Box Like a Woman</h1>
+    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="siteplan.html">Home</a></li>
+        <li><a href="techniques.html">Techniques</a></li>
+        <li><a href="inspiration.html" class="active">Inspiration</a></li>
+        <li><a href="history.html">History</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h2>Inspiring Women in Boxing</h2>
+      <p>Meet the legends who changed the game and inspired generations.</p>
+    </section>
+
+    <section class="boxer-grid">
+      <article class="boxer">
+        <img src="images/barbara-buttrick.webp" alt="Barbara Buttrick" />
+        <h3>Barbara Buttrick</h3>
+        <p>Known as “The Mighty Atom,” she was a pioneer of women’s boxing in the 1950s. She fought when women weren’t allowed to and opened the ring for future fighters.</p>
+      </article>
+
+      <article class="boxer">
+        <img src="images/lucia-rijker.jpg" alt="Lucia Rijker" />
+        <h3>Lucia Rijker</h3>
+        <p>One of the most feared boxers of the 1990s, undefeated and powerful, Rijker was known as “The Most Dangerous Woman in the World.”</p>
+      </article>
+
+      <article class="boxer">
+        <img src="images/laila-ali.jpg" alt="Laila Ali" />
+        <h3>Laila Ali</h3>
+        <p>Daughter of Muhammad Ali, she carved her own legacy with an undefeated record and became a role model for strength and elegance in the ring.</p>
+      </article>
+
+      <article class="boxer">
+        <img src="images/katie-taylor.jpg" alt="Katie Taylor" />
+        <h3>Katie Taylor</h3>
+        <p>Olympic gold medalist and undisputed lightweight champion, Taylor helped push women’s boxing to global recognition in the 2010s.</p>
+      </article>
+
+      <article class="boxer">
+        <img src="images/amanda-serrano.jpg" alt="Amanda Serrano" />
+        <h3>Amanda Serrano</h3>
+        <p>One of the most decorated female boxers of all time, Serrano holds titles in seven weight divisions and is a proud Puerto Rican icon.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Box Like a Woman</p>
+    <p><a href="references.html" style="color: var(--mustard);">References</a></p>
+  </footer>
+
+  <script src="scripts/siteplan.js"></script>
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

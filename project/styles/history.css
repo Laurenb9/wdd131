@@ -1,0 +1,21 @@
+/* History Page – Mobile First */
+
+.history-timeline {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.history-timeline article {
+  background-color: var(--blue-gray);
+  color: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.history-timeline h3 {
+  color: var(--mustard);
+  margin-bottom: 0.5rem;
+}
