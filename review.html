@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Submitted</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      color: #040F0F;
+    }
+
+    h1 {
+      color: #586F7C;
+    }
+
+    .review-info {
+      background-color: #f3f3f3;
+      padding: 1rem;
+      border-left: 4px solid #FFB800;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: gray;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      // Actualizar el contador de reseñas
+      let count = localStorage.getItem("reviewCount");
+      count = count ? parseInt(count) + 1 : 1;
+      localStorage.setItem("reviewCount", count);
+      document.getElementById("counter").textContent = count;
+
+      // Obtener los parámetros de la URL
+      const params = new URLSearchParams(window.location.search);
+      const data = {
+        product: params.get("product"),
+        rating: params.get("rating"),
+        installDate: params.get("installDate"),
+        features: params.getAll("features").join(", "),
+        review: params.get("review"),
+        username: params.get("username")
+      };
+
+      // Mostrar los datos en el HTML
+      document.getElementById("product").textContent = data.product || "Not provided";
+      document.getElementById("rating").textContent = data.rating || "Not rated";
+      document.getElementById("date").textContent = data.installDate || "N/A";
+      document.getElementById("features").textContent = data.features || "None selected";
+      document.getElementById("written").textContent = data.review || "No comment";
+      document.getElementById("user").textContent = data.username || "Anonymous";
+    });
+  </script>
+</head>
+<body>
+  <h1>🎉 Thank You for Your Review!</h1>
+  <p>You have submitted <strong><span id="counter">0</span></strong> review(s).</p>
+
+  <section class="review-info">
+    <h2>Review Summary</h2>
+    <p><strong>Product:</strong> <span id="product"></span></p>
+    <p><strong>Rating:</strong> <span id="rating"></span> / 5</p>
+    <p><strong>Installation Date:</strong> <span id="date"></span></p>
+    <p><strong>Useful Features:</strong> <span id="features"></span></p>
+    <p><strong>Review:</strong> <span id="written"></span></p>
+    <p><strong>User Name:</strong> <span id="user"></span></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Laura Rendón | BYU–Idaho</p>
+  </footer>
+</body>
+</html>
